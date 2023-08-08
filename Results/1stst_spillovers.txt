@@ -1,0 +1,30 @@
+		(1)	(2)	(3)	(4)
+VARIABLES	LABELS	Social Activity Index	Social Activity Index	Social Activity Index	Social Activity Index
+					
+Treatment	Treatment | First DPI	-9.230***	-8.832***	-8.650***	-8.533***
+		(1.283)	(1.285)	(1.276)	(1.330)
+Intensity	Further changes in DPIs	-9.040***	-8.706***	-8.569***	-8.454***
+		(0.752)	(0.774)	(0.785)	(0.832)
+f1	Neighbors' Cases $ _{t-1}$		-1.217	-0.715	-0.297
+			(1.204)	(1.223)	(1.218)
+f7	$\sum_{s=2}^7's' Cases $ _{t-s}$		-1.865	-4.942**	-3.952*
+			(2.132)	(2.207)	(2.201)
+f14	$\sum_{s=8}^14's' Cases $ _{t-s}$		-4.928**	3.502	2.841
+			(2.388)	(2.598)	(2.558)
+f1death	Neighbors' Deaths $ _{t-1}$			-179.652***	-177.298***
+				(53.370)	(52.872)
+f7death	$\sum_{s=2}^7's' Deaths $ _{t-s}$			-201.031	-188.288
+				(145.337)	(138.069)
+f14death	$\sum_{s=8}^14's' Deaths $ _{t-s}$			-47.493	-44.338
+				(131.904)	(127.189)
+cov1	Neighbors' DPIs $ _{t-1}$				-1.098
+					(1.112)
+cov7	$\sum_{s=2}^7's' DPIs $ _{t-s}$				-4.765***
+					(1.295)
+cov14	$\sum_{s=8}^14's' DPIs $ _{t-s}$				4.234***
+					(1.034)
+					
+Observations		48,304	48,304	48,304	48,304
+R-squared		0.747	0.750	0.752	0.753
+Robust standard errors in parentheses					
+*** p<0.01, ** p<0.05, * p<0.1					

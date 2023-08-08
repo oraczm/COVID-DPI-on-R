@@ -1,0 +1,17 @@
+		(1)	(2)	(3)	(4)
+VARIABLES	LABELS				
+					
+dTreatment	$\Delta$ DPI (first 7 days)	-3.923***	-3.916***	-3.313***	-4.271***
+		(0.914)	(0.914)	(0.938)	(1.187)
+Constant	Constant	-2.737***			
+		(0.595)			
+					
+Observations		47,545	47,545	47,545	47,545
+R-squared		0.030	0.030	0.209	0.219
+Country FE		$ \circ $	$ \bullet $	$ \bullet $	$ \bullet $
+Calendar FE		$ \circ $	$ \circ $	$ \bullet $	$ \bullet $
+Event-time FE		$ \circ $	$ \circ $	$ \circ $	$ \bullet $
+Controls$^\ddag$		$ \bullet $	$ \bullet $	$ \bullet $	$ \bullet $
+Countries		115	115	115	115
+Robust standard errors in parentheses					
+*** p<0.01, ** p<0.05, * p<0.1					

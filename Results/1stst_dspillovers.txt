@@ -1,0 +1,31 @@
+		(1)	(2)	(3)	(4)
+VARIABLES	LABELS				
+					
+dTreatment	$\Delta$ DPI (first 7 days)	-4.249***	-4.245***	-4.244***	-4.271***
+		(1.194)	(1.194)	(1.194)	(1.187)
+df1	Neighbors' Cases (last day)		-4.399***	-4.079***	-4.021***
+			(1.345)	(1.290)	(1.291)
+df7	Neighbors' Cases (last week)		-4.199	-5.730*	-5.380
+			(3.306)	(3.357)	(3.368)
+df14	Neighbors' Cases (week before)		10.777*	12.446*	12.702*
+			(6.222)	(6.842)	(6.845)
+df1death	Neighbors' Deaths (last day)			-58.845	-58.126
+				(39.701)	(39.695)
+df7death	Neighbors' Deaths (last week)			157.100	162.733
+				(144.822)	(145.513)
+df14death	Neighbors' Deaths (week before)			-61.993	-57.968
+				(187.803)	(188.065)
+dcov1	Neighbors' DPIs (last day)				-0.880**
+					(0.387)
+dcov7	Neighbors' DPIs (last week)				-3.039***
+					(0.981)
+dcov14	Neighbors' DPIs (week before)				0.213
+					(0.711)
+					
+Observations		47,545	47,545	47,545	47,545
+R-squared		0.218	0.219	0.219	0.219
+Fixed Effects$^\dag$		$ \bullet $	$ \bullet $	$ \bullet $	$ \bullet $
+Controls$^\ddag$		$ \bullet $	$ \bullet $	$ \bullet $	$ \bullet $
+Countries		115	115	115	115
+Robust standard errors in parentheses					
+*** p<0.01, ** p<0.05, * p<0.1					

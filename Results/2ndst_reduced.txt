@@ -1,0 +1,18 @@
+		(1)	(2)
+VARIABLES	LABELS	outcome	outcome
+			
+That	DPI induced		0.012***
+			(0.003)
+Vhat	Voluntary		0.001**
+			(0.000)
+Phat	Other Interventions		0.028
+			(0.028)
+activity	Social Activity Index	0.002***	
+		(0.000)	
+			
+Observations		37,814	37,814
+Country FE		$ \bullet $	$ \bullet $
+Controls$^\ddag$		$ \bullet $	$ \bullet $
+Countries		108	108
+Robust standard errors in parentheses			
+*** p<0.01, ** p<0.05, * p<0.1			

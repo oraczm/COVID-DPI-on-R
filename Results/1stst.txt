@@ -1,0 +1,17 @@
+		(1)	(2)
+VARIABLES	LABELS		
+			
+dTargeted	$\Delta$ Targeted (first 7 days)		-3.439***
+			(1.119)
+dGeneral	$\Delta$ General (first 7 days)		-6.391**
+			(2.775)
+dTreatment	$\Delta$ DPI (first 7 days)	-4.271***	
+		(1.187)	
+			
+Observations		47,545	47,545
+R-squared		0.219	0.219
+Fixed Effects$^\dag$		$ \bullet $	$ \bullet $
+Controls$^\ddag$		$ \bullet $	$ \bullet $
+Countries		115	115
+Robust standard errors in parentheses			
+*** p<0.01, ** p<0.05, * p<0.1			

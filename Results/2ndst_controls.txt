@@ -1,0 +1,89 @@
+		(1)
+VARIABLES	LABELS	outcome
+		
+Treatment	First DPI	-0.050***
+		(0.012)
+d1	Cases $ _{t-1}$	0.025
+		(0.017)
+d7	$\sum_{s=2}^7 $ _{t-s}$	0.177***
+		(0.037)
+d14	$\sum_{s=8}^14 $ _{t-s}$	-0.170***
+		(0.064)
+d1death	Deaths $ _{t-1}$	0.257
+		(0.712)
+d7death	$\sum_{s=2}^7 $ _{t-s}$	3.004**
+		(1.341)
+d14death	$\sum_{s=8}^14 $ _{t-s}$	-4.096***
+		(1.468)
+Intensity	Further DPI changes	-0.017
+		(0.012)
+travelc_2	travelc==     1.0000	-0.438*
+		(0.241)
+travelc_3	travelc==     2.0000	-0.398*
+		(0.230)
+travelc_4	travelc==     3.0000	-0.381*
+		(0.214)
+travelc_5	travelc==     4.0000	-0.362
+		(0.227)
+testing_2	testing==     1.0000	0.176
+		(0.168)
+testing_3	testing==     2.0000	0.161
+		(0.158)
+testing_4	testing==     3.0000	0.288
+		(0.190)
+contact_2	contact==     1.0000	-0.095
+		(0.103)
+contact_3	contact==     2.0000	-0.024
+		(0.112)
+masks_2	masks==     1.0000	-0.215
+		(0.189)
+masks_3	masks==     2.0000	-0.294**
+		(0.133)
+masks_4	masks==     3.0000	-0.394***
+		(0.098)
+masks_5	masks==     4.0000	-0.405***
+		(0.114)
+incomes_2	incomes==     1.0000	-0.143
+		(0.094)
+incomes_3	incomes==     2.0000	-0.255
+		(0.157)
+relief_2	relief==     1.0000	-0.268***
+		(0.085)
+relief_3	relief==     2.0000	-0.168*
+		(0.086)
+infoc_2	infoc==     1.0000	0.067
+		(0.254)
+infoc_3	infoc==     2.0000	0.075
+		(0.181)
+elderly_2	elderly==     1.0000	-0.108
+		(0.087)
+elderly_3	elderly==     2.0000	-0.443***
+		(0.131)
+elderly_4	elderly==     3.0000	-0.126
+		(0.099)
+fiscal	Announced economic stimulus spending in USD	-0.000
+		(0.000)
+tested	Count of new COVID-19 tests performed on this date	-0.000***
+		(0.000)
+positives	Share of positive COVID-19 tests on this date	-0.052
+		(0.044)
+vacshare	Share of population vaccinated | 14 days earlier	3.600*
+		(1.871)
+temperature	Mean temperature for the day in degrees Celsius	0.020
+		(0.014)
+rainfall	Average Total rainfall reported during the day in millimeters	-0.001
+		(0.003)
+snowfall	Average Total snowfall reported during the day in millimeters	0.000
+		(0.000)
+dewp	Mean dew point for the day in degrees Celsius	-0.032**
+		(0.015)
+humidity	Average humidity for the day in percent of saturation levels	0.009*
+		(0.005)
+weekend	RECODE of dow	0.115**
+		(0.045)
+		
+Observations		37,814
+Country FE		$ \bullet $
+Countries		108
+Robust standard errors in parentheses		
+*** p<0.01, ** p<0.05, * p<0.1		
