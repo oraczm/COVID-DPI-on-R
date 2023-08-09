@@ -72,6 +72,7 @@ global controls $domestic $control_pols  $weather  $season
 	global dcontrols $ddomestic $dcontrol_pols  $dweather  $season
 
 
+**********************************************************
 * Baseline model (All DPIs) + setting the sample
 *****************
 
@@ -84,6 +85,12 @@ qui reghdfe dactivity dTreatment $dspillovers $dcontrols  if smp, absorb(id date
 
 * All DPIs	
 	outreg2 using Results/1stst.tex, tex(frag) ///
+		keep(dTreatment) ///
+		addstat(Countries, e(N_clust)) ///
+		addtext(Fixed Effects\$^\dag\$, \$ \bullet \$ , Controls\$^\ddag\$, \$ \bullet \$) ///
+		dec(3) replace label nocons
+		
+	outreg2 using Results/1stst_stringency.tex, tex(frag) ///
 		keep(dTreatment) ///
 		addstat(Countries, e(N_clust)) ///
 		addtext(Fixed Effects\$^\dag\$, \$ \bullet \$ , Controls\$^\ddag\$, \$ \bullet \$) ///
@@ -105,7 +112,7 @@ gen dGeneral = d.General
 global policies dTargeted dGeneral	
 	
 	cap drop res2
-reghdfe dactivity $policies $dspillovers $dcontrols  if smp, absorb(id date tDP) ///
+qui reghdfe dactivity $policies $dspillovers $dcontrols  if smp, absorb(id date tDP) ///
 	vce(cl id) nocons res(res2)
 	outreg2 using Results/1stst.tex, tex(frag) ///
 		keep($policies) ///
@@ -123,6 +130,11 @@ do "Do/6a Spillovers.do"
 do "Do/6b FEs.do"
 * do "6b2 FEs in diff.do"
 
+* 3. Heterogeneity: Stringency levels
+do "Do/6c Stringency.do"
+
+
+**********************************************************
 * Results
 seeout using "Results/1stst.txt", label
 seeout using "Results/1stst_dspillovers.txt", label

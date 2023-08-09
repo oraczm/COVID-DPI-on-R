@@ -137,10 +137,13 @@ do "Do/7a Reduced forms.do"
 * Heterogeneity: Targeted, General
 do "Do/7b Targeted General.do"
 
-
 **********************************************************
 * Robustness: Assumed latency
 do "Do/7c Latency.do"
+
+**********************************************************
+* Heterogeneity: Stringency levels
+do "Do/7d Stringency.do"
 
 **********************************************************	
 * Results
@@ -149,5 +152,6 @@ seeout using "Results/2ndst_controls.txt", label
 seeout using "Results/2ndst_reduced.txt", label
 seeout using "Results/2ndst_target.txt", label
 seeout using "Results/2ndst_latency.txt", label
+seeout using "Results/2ndst_stringency.tex", label
 
 

@@ -1,0 +1,18 @@
+		(1)	(2)
+VARIABLES	LABELS	outcome	outcome
+			
+Recommended	Recommended		-0.236***
+			(0.089)
+Mandatory	Mandatory		-0.043***
+			(0.012)
+Vhat	Voluntary	0.001**	0.001**
+		(0.000)	(0.000)
+Treatment	First DPI	-0.050***	
+		(0.012)	
+			
+Observations		37,814	37,814
+Country FE		$ \bullet $	$ \bullet $
+Controls$^\ddag$		$ \bullet $	$ \bullet $
+Countries		108	108
+Robust standard errors in parentheses			
+*** p<0.01, ** p<0.05, * p<0.1			
